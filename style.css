@@ -1,0 +1,228 @@
+*, html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: helvetica;
+	scroll-behavior: smooth;
+}
+
+header {
+	background: #1A2238;
+	color: #eaeaea;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	padding: 10px;
+}
+
+li {
+	list-style-type: none;
+	margin: 5px;
+	padding: 5px;
+}
+
+
+li:hover {
+	background: darkorange;
+	transition: .5s;
+	transform: rotate(2deg);
+}
+
+a {
+	color: #eaeaea;
+	text-decoration: none;
+}
+
+.logo {
+	margin-right: auto;
+	display: flex;
+}
+
+.logo-img {
+	width: 35px;
+	height: 35px;
+	margin-left: 10px;
+	cursor: pointer;
+
+}
+
+.logo-title {
+	margin-left: 7px;
+	font-size: 20px;
+	padding: 8px;
+	cursor: pointer;
+}
+
+.logo-title:hover {
+	color: darkorange;
+	transition: .5s;
+	transform: rotate(2deg);
+}
+
+.btn {
+	margin-right: 10px;
+	border: none;
+	font-size: 15px;
+	padding: 6px 12px;
+	background: darkorange;
+	color: white;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.btn-1 {
+	margin-right: 10px;
+	border: none;
+	font-size: 15px;
+	padding: 6px 12px;
+	background: darkorange;
+	color: white;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.btn:hover{
+	color: black;
+	transition: .5s;
+}
+
+.btn-1:hover {
+	color: black;
+	transition: .5s;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 70px 0;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	text-align: center;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.description {
+	font-size: 28px;
+	font-weight: bolder;
+}
+
+.img-foto {
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	padding: 10px;
+}
+
+.parallax {
+	background-image: url('asset/foto/doni3.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.tentang {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #1A2238;
+	color: #eaeaea;
+	padding: 10px;
+}
+
+.btn-1-style {
+	margin-top: 20px;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	opacity: 0.8;
+}
+.card-item {
+	border-radius: 8px;
+	max-width: 300px;
+	text-align: center;
+	background: #f7f7f7;
+	color: #222;
+	padding: 7px;
+	box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 1.0);	
+}
+.card-item:hover {
+	transform: rotate(2deg);
+}
+
+
+.icon {
+	width: 70px;
+	height: 70px;
+	margin: 5px;
+	padding: 4px;
+}
+
+.card-title {
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+.card-description {
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+footer {
+	padding: 15px;
+	text-align: center;
+	background: #1A2238;
+	color: #eaeaea;
+	margin-bottom: 0;
+}
+@media screen and (max-width: 500px) {
+	.card {
+		flex-direction: column;
+		gap: 0;
+	}
+	.card-item {
+		width: 100%;
+	}
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	.intro {
+		margin-top: 20px;
+	}
+	.img-foto {
+		padding: 0;
+
+	}
+
+	.btn {
+		position: fixed;
+		bottom: 0;
+		right: 10px;
+    	bottom:50px;
+	}
+
+}
